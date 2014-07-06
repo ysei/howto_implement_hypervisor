@@ -295,23 +295,23 @@ qualificationフィールドを参照するとアクセス方向
 I/Oをエミュレーションするにはアクセスサイズ、
 データの書き込み先・読み込み元などの情報が足りません(表3)。
 
-  ビットポジション   内容
+  ビットポジション   内容
   ------------------------ --------------------------------------------------------
   0                        EPT violation の原因は data read
   1                        EPT violation の原因は data write
   2                        EPT violation の原因は instruction fetch
-  3                        アクセスされたページに対応するEPTエントリのread accessと、
-                           このExit qualificationの0 ビット目との AND
-  4                        アクセスされたページに対応するEPTエントリのwrite accessと、
-                           このExit qualificationの1 ビット目との AND
-  5                        アクセスされたページに対応するEPTエントリのexecute accessと、
-                           このExit qualificationの 2 ビット目との AND
+  3                        アクセスされたページに対応するEPTエントリのread accessと、
+                           このExit qualificationの0 ビット目との AND
+  4                        アクセスされたページに対応するEPTエントリのwrite accessと、
+                           このExit qualificationの1 ビット目との AND
+  5                        アクセスされたページに対応するEPTエントリのexecute accessと、
+                           このExit qualificationの 2 ビット目との AND
   6                        Reserved
-  7                        VMCS の VM-Exit Information Fields の Guest-linear address が有効
-  8                        1 = EPT violationの原因がゲストフィジカルアドレスへのアクセス
-                           0 = EPT violationの原因が EPT のページウォーク中やEPTのページテーブルエントリの更新
+  7                        VMCS の VM-Exit Information Fields の Guest-linear address が有効
+  8                        1 = EPT violationの原因がゲストフィジカルアドレスへのアクセス
+                           0 = EPT violationの原因が EPT のページウォーク中やEPTのページテーブルエントリの更新
   11:09                    Reserved
-  12                       IRET による NMI ブロック解除
+  12                       IRET による NMI ブロック解除
   63:13:00                 Reserved
 
   Table: Exit Reason 48のときのExit qualification
