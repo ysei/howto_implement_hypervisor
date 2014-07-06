@@ -173,7 +173,7 @@ Local APIC
   LDR（Logical Destination Register） Logical APIC IDを指定
   DFR（Destination Format Register）  Logical Destination Modeのモデルを指定（Flat model/Cluster model）
 
-  Table: Local APICの主なレジスタ
+  Table: Local APICの主なレジスタ
 
 割り込み着信時の Local APIC および CPU
 の挙動を簡単にまとめると、次のよう流れになります。
