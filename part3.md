@@ -233,14 +233,14 @@ VMExitが発生した時、ハイパーバイザはExit要
 因が0であることを確認したあと、 VMCSのVM-Exit Information Fieldsに あ
 るVM-exit interruption informationを参照します(表2)。
 
-  ビットポジション   内容
+  ビットポジション   内容
   ------------------------ --------------------------------------------------------
-  7:00                     割り込みベクタ番号
-  10:08                    割り込みタイプ(0 =外部割り込み、2 = NMI、3=ハードウェア例外、6 =ソフトウェア例外)
-  11                       Error code が正常
-  12                       IRET による NMI ブロック解除
+  7:00                     割り込みベクタ番号
+  10:08                    割り込みタイプ(0 =外部割り込み、2 = NMI、3=ハードウェア例外、6 =ソフトウェア例外)
+  11                       Error code が正常
+  12                       IRET による NMI ブロック解除
   30:13:00                 Reserved
-  31                       VM-exit interruption information が正常
+  31                       VM-exit interruption information が正常
 
   Table: VM-exit interruption information
 
