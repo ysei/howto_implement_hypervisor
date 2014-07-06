@@ -247,7 +247,7 @@ APICへ転送されます。Redirection Tableの各
   10:08             Delivery Mode            Fixed／Lowest Priorityなど
   7:00              Vector                   ベクタ番号
 
-  Table: Local APICの主なレジスタ
+  Table: Local APICの主なレジスタ
 
 Redirection Table EntryではDestination Modeを
 指定する必要があります。Destination Modeに Physical Destination
