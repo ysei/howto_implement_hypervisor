@@ -301,9 +301,9 @@ I/Oをエミュレーションするにはアクセスサイズ、
   1                        EPT violation の原因は data write
   2                        EPT violation の原因は instruction fetch
   3                        アクセスされたページに対応するEPTエントリのread accessと、
-                           このExit qualificationの0 ビット目との AND
+                           このExit qualificationの 0 ビット目との AND
   4                        アクセスされたページに対応するEPTエントリのwrite accessと、
-                           このExit qualificationの1 ビット目との AND
+                           このExit qualificationの 1 ビット目との AND
   5                        アクセスされたページに対応するEPTエントリのexecute accessと、
                            このExit qualificationの 2 ビット目との AND
   6                        Reserved
